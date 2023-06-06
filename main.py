@@ -20,7 +20,7 @@ def analyse_text(topic, chunk_size=2):
     search_pattern = os.path.join(folder_path, '*' + file_extension)
     file_list = glob.glob(search_pattern)
     for file_path in file_list:
-        analyse_and_export_speech(file_path, topic, chunk_size)
+        analyse_and_export_text(file_path, topic, chunk_size)
 
 
 
@@ -29,10 +29,11 @@ def analyse_text(topic, chunk_size=2):
 # audio = 'audio/audio5.wav'
 # text = 'text/text.txt'
 topic = 'digital_crimes'
-analyse_speech(topic)
+# analyse_speech(topic)
+analyse_text(topic)
 
 # train_model('sentiment')
 # train_model(topic)
 
 # analyse_and_export_text(text, 'digital_crimes', 2)
-# analyse_and_export_speech(audio, 'digital_crimes', 2)
+# analyse_and_export_speech(audio, topic, 2)

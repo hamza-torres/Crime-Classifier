@@ -1,0 +1,180 @@
+{
+    "category": "digital_crimes",
+    "prominent_incident_type": [
+        "Data Breach and Customer Information Theft"
+    ],
+    "all_incident_hits": [
+        [
+            "Ransomware Attacks"
+        ],
+        [
+            "Drug Trafficking and Communications"
+        ],
+        [
+            "Data Breach and Customer Information Theft"
+        ],
+        [
+            "Data Breach and Customer Information Theft"
+        ],
+        [
+            "Data Breach and Customer Information Theft"
+        ],
+        [
+            "Drug Trafficking and Communications"
+        ],
+        [
+            "Drug Trafficking and Communications"
+        ],
+        [
+            "Ransomware Attacks"
+        ],
+        [
+            "Data Breach and Customer Information Theft"
+        ]
+    ],
+    "overall_sentiments": [
+        "positive"
+    ],
+    "all_sentiment_hits": [
+        [
+            "positive"
+        ],
+        [
+            "negative"
+        ],
+        [
+            "neutral"
+        ],
+        [
+            "neutral"
+        ],
+        [
+            "positive"
+        ],
+        [
+            "negative"
+        ],
+        [
+            "positive"
+        ],
+        [
+            "positive"
+        ],
+        [
+            "positive"
+        ]
+    ],
+    "analysis_results": {
+        "named_entities": [
+            [
+                "John",
+                "PERSON"
+            ]
+        ],
+        "noun_phrases": [
+            "you",
+            "the booming ransomware business",
+            "It",
+            "it",
+            "people's valuable files",
+            "massive sums",
+            "money",
+            "cryptocurrencies",
+            "I",
+            "this guy",
+            "who",
+            "our cleverly crafted message",
+            "his entire business",
+            "panic mode",
+            "he",
+            "the ransom",
+            "It",
+            "such a lucrative and thrilling operation",
+            "you",
+            "what",
+            "Data theft",
+            "We",
+            "these colossal data breaches",
+            "personal information",
+            "credit card details",
+            "social security numbers",
+            "The profits",
+            "the chaos",
+            "we",
+            "we",
+            "the art",
+            "intellectual theft",
+            "the innovative ideas",
+            "naive innovators",
+            "them",
+            "a surefire way",
+            "a fortune",
+            "It",
+            "their hard work",
+            "our gain",
+            "another note",
+            "you",
+            "the surge",
+            "cyberbullying",
+            "harassment",
+            "we",
+            "It",
+            "people",
+            "the weight",
+            "our malicious attacks",
+            "The power",
+            "we",
+            "our screens",
+            "online fraud",
+            "our playground",
+            "The number",
+            "unsuspecting victims",
+            "we",
+            "our phishing scams",
+            "access",
+            "their bank accounts",
+            "The thrill",
+            "them",
+            "their hard-earned money",
+            "We",
+            "the predators",
+            "this digital jungle",
+            "my friend",
+            "the possibilities",
+            "profit",
+            "chaos"
+        ],
+        "phone_numbers": [],
+        "email_addresses": [],
+        "urls": [],
+        "ip_addresses": [],
+        "dates": [],
+        "file_names": [],
+        "locations": [],
+        "usernames": [],
+        "key_phrases": [
+            "the booming ransomware business",
+            "the ransom",
+            "Data theft",
+            "these colossal data breaches",
+            "intellectual theft",
+            "a surefire way",
+            "cyberbullying",
+            "online fraud",
+            "unsuspecting victims",
+            "our phishing scams"
+        ],
+        "context_sentences": [
+            "Hey, John, have you heard about the booming ransomware business?",
+            "I came across this guy who fell for our cleverly crafted message, and his entire business went into panic mode until he coughed up the ransom.",
+            "Data theft.",
+            "We've been scoring big with these colossal data breaches, stealing personal information like credit card details and social security numbers.",
+            "And speaking of stealing, we've mastered the art of intellectual theft.",
+            "Snatching the innovative ideas of naive innovators and selling them off as our own is a surefire way to make a fortune.",
+            "On another note, have you noticed the surge in cyberbullying and harassment we can initiate online?",
+            "Lastly, online fraud is our playground.",
+            "The number of unsuspecting victims we trick with our phishing scams and gain access to their bank accounts is astounding."
+        ]
+    },
+    "transcribed_text": "Hey, John, have you heard about the booming ransomware business? It's insane how easy it is to encrypt people's valuable files and demand massive sums of money in cryptocurrencies. I came across this guy who fell for our cleverly crafted message, and his entire business went into panic mode until he coughed up the ransom. It's such a lucrative and thrilling operation. And you know what's even more exciting? Data theft. We've been scoring big with these colossal data breaches, stealing personal information like credit card details and social security numbers. The profits are enormous, and the chaos we create is exhilarating. And speaking of stealing, we've mastered the art of intellectual theft. Snatching the innovative ideas of naive innovators and selling them off as our own is a surefire way to make a fortune. It's all about exploiting their hard work for our gain. On another note, have you noticed the surge in cyberbullying and harassment we can initiate online? It's amusing to watch people crumble under the weight of our malicious attacks. The power we wield from behind our screens is immense. Lastly, online fraud is our playground. The number of unsuspecting victims we trick with our phishing scams and gain access to their bank accounts is astounding. The thrill of outsmarting them and raking in their hard-earned money is truly intoxicating. We're the predators in this digital jungle, my friend, and the possibilities for profit and chaos are endless."
+}

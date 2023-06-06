@@ -1,0 +1,153 @@
+{
+    "category": "digital_crimes",
+    "prominent_incident_type": [
+        "Ransomware Attacks"
+    ],
+    "all_incident_hits": [
+        [
+            "Ransomware Attacks"
+        ]
+    ],
+    "overall_sentiments": [
+        "positive"
+    ],
+    "all_sentiment_hits": [
+        [
+            "positive"
+        ]
+    ],
+    "analysis_results": {
+        "named_entities": [
+            [
+                "Swiss",
+                "NORP"
+            ],
+            [
+                "ABB",
+                "ORG"
+            ],
+            [
+                "may 7th",
+                "DATE"
+            ],
+            [
+                "cyber crime group",
+                "ORG"
+            ],
+            [
+                "April 2022",
+                "DATE"
+            ],
+            [
+                "Windows",
+                "PRODUCT"
+            ],
+            [
+                "hundreds",
+                "CARDINAL"
+            ],
+            [
+                "Enterprise",
+                "ORG"
+            ],
+            [
+                "Linux",
+                "GPE"
+            ],
+            [
+                "Krista",
+                "GPE"
+            ],
+            [
+                "VMware",
+                "ORG"
+            ],
+            [
+                "Linux",
+                "GPE"
+            ],
+            [
+                "Cyber",
+                "PRODUCT"
+            ]
+        ],
+        "noun_phrases": [
+            "Swiss multinational company",
+            "ABB",
+            "a leading electrification",
+            "automation technology provider",
+            "a black pastor",
+            "ransomware attack",
+            "business operations",
+            "the company",
+            "victim",
+            "a ransomware attack",
+            "black pastor",
+            "cyber crime group",
+            "that",
+            "April 2022 bleepingcomputer",
+            "multiple employees",
+            "the ransomware attack",
+            "the company's Windows active directory",
+            "hundreds",
+            "devices",
+            "response",
+            "the attack",
+            "be terminated VPN connections",
+            "its customers",
+            "the spread",
+            "the ransomware",
+            "other networks black pastor use cobalt strike",
+            "a little access",
+            "the corporate network",
+            "other devices",
+            "other Enterprise",
+            "ransomware operations black pastor",
+            "a Linux",
+            "Krista",
+            "VMware se virtual machines",
+            "Linux service",
+            "your support",
+            "Cyber shorts",
+            "more informative videos",
+            "insider trading",
+            "you",
+            "a lot",
+            "money",
+            "you",
+            "it",
+            "you",
+            "them"
+        ],
+        "phone_numbers": [],
+        "email_addresses": [],
+        "urls": [],
+        "ip_addresses": [],
+        "dates": [
+            "may 7th",
+            "April 2022"
+        ],
+        "file_names": [],
+        "locations": [
+            "Linux",
+            "Krista",
+            "Linux"
+        ],
+        "usernames": [],
+        "key_phrases": [
+            "ransomware attack",
+            "victim",
+            "a ransomware attack",
+            "the ransomware attack",
+            "the ransomware",
+            "ransomware operations black pastor",
+            "insider trading"
+        ],
+        "context_sentences": [
+            "Swiss multinational company ABB a leading electrification and automation technology provider has suffered a black pastor ransomware attack reportedly impacting business operations on may 7th",
+            "the company fell victim to a ransomware attack conducted by black pastor at cyber crime group that surfaced in April 2022 bleepingcomputer has learnt from multiple employees that the ransomware attack has affected the company's Windows active directory affecting hundreds of devices in response to the attack at be terminated VPN connections with its customers to prevent the spread of the ransomware to other networks black pastor use cobalt strike to gain a little access to the corporate network and spread laterally to other devices like other Enterprise targeting ransomware operations black pastor created a Linux and Krista to target VMware se virtual machines running on Linux service seeking for your support by subscribing to Cyber shorts for more informative videos",
+            "so yeah insider trading illegal"
+        ]
+    },
+    "transcribed_text": "Swiss multinational company ABB a leading electrification and automation technology provider has suffered a black pastor ransomware attack reportedly impacting business operations on may 7th the company fell victim to a ransomware attack conducted by black pastor at cyber crime group that surfaced in April 2022 bleepingcomputer has learnt from multiple employees that the ransomware attack has affected the company's Windows active directory affecting hundreds of devices in response to the attack at be terminated VPN connections with its customers to prevent the spread of the ransomware to other networks black pastor use cobalt strike to gain a little access to the corporate network and spread laterally to other devices like other Enterprise targeting ransomware operations black pastor created a Linux and Krista to target VMware se virtual machines running on Linux service seeking for your support by subscribing to Cyber shorts for more informative videos so yeah insider trading illegal but you can make a lot of money if you know how to get away with it and not actually that bad so you probably gonna get them all the time"
+}

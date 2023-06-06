@@ -12,6 +12,7 @@ from chunking import perform_analysis
 import string
 import re
 from keywords import keywords
+import os
 
 def transcribe(audio):
     r = sr.Recognizer()
@@ -87,13 +88,21 @@ def analysis_work(text, topic, output_name, chunk_size= 2, context_window= 3):
         "transcribed_text": text,
     }
     json_data = json.dumps(analysis_output, indent=4)
+    
+    results_directory = os.path.dirname(output_name)
+    if not os.path.exists(results_directory):
+        os.makedirs(results_directory)
+    
     with open(output_name, "w") as json_file:
         json_file.write(json_data)
 
 def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 3):
     text = transcribe(audio_file)
-    json_filename = audio_file.replace("audio/", "")
-    json_filename = "results/" + "audio_result" + json_filename.replace(".wav", ".json")
+    # json_filename = audio_file.replace("audio/", "")
+    # json_filename = "results/" + "audio_result" + json_filename.replace(".wav", ".json")
+    filename = os.path.basename(audio_file)
+    json_filename = "results/audio_results_" + os.path.splitext(filename)[0] + ".json"
+
     
     analysis_work(text, topic, json_filename, chunk_size, context_window)
 
@@ -102,8 +111,8 @@ def analyse_and_export_text(text_file, topic, chunk_size= 2, context_window= 3):
     with open(text_file, 'r') as file:
         data = file.read()
     text = data.replace('\n', '')
-    json_filename = text_file.replace("text/", "")
-    json_filename = "results/" + "text_result_" + json_filename.replace(".txt", ".json")
+    filename = os.path.basename(text_file)
+    json_filename = "results/text_results_" + os.path.splitext(filename)[0] + ".json"
     
     analysis_work(text, topic, json_filename, chunk_size, context_window)
 

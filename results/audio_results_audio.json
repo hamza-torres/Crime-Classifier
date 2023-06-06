@@ -1,0 +1,58 @@
+{
+  "category": "digital_crimes",
+  "prominent_incident_type": ["Data Breach and Customer Information Theft"],
+  "all_incident_hits": [["Data Breach and Customer Information Theft"]],
+  "overall_sentiments": ["positive"],
+  "all_sentiment_hits": [["positive"]],
+  "analysis_results": {
+    "named_entities": [
+      ["Manor", "GPE"],
+      ["the Project Life Cycle", "ORG"]
+    ],
+    "noun_phrases": [
+      "the development",
+      "the system",
+      "an agile approach",
+      "a modular and maintainable Manor",
+      "flexibility",
+      "easy addition",
+      "new features iterative and incremental development",
+      "task",
+      "manageable units",
+      "unit testing integration test",
+      "reliability",
+      "early production",
+      "the code",
+      "adaptability",
+      "quick modifications",
+      "enhancements",
+      "firebase services",
+      "the authentication",
+      "storage",
+      "Hunters",
+      "productivity",
+      "people functionalities",
+      "low-level infrastructure development",
+      "the development process",
+      "agility adaptability",
+      "Efficiency",
+      "value",
+      "a high level",
+      "productivity",
+      "the Project Life Cycle"
+    ],
+    "phone_numbers": [],
+    "email_addresses": [],
+    "urls": [],
+    "ip_addresses": [],
+    "dates": [],
+    "file_names": [],
+    "locations": ["Manor"],
+    "usernames": [],
+    "key_phrases": ["firebase services"],
+    "context_sentences": [
+      "the development of the system follows an agile approach based is designed in a modular and maintainable Manor allowing for flexibility and easy addition of new features iterative and incremental development is prioritised with task broken down into manageable units and completed in short iterations call sprint's protesting including unit testing integration test ensures reliability and practiced enabling early production the code is organised to promote adaptability allowing for quick modifications and enhancements leveraging firebase services such as far as the authentication and storage and Hunters productivity by utilising people functionalities and reducing low-level infrastructure development the development process increases agility adaptability and Efficiency delivering value incrementally and maintaining a high level of productivity throughout the Project Life Cycle"
+    ]
+  },
+  "transcribed_text": "the development of the system follows an agile approach based is designed in a modular and maintainable Manor allowing for flexibility and easy addition of new features iterative and incremental development is prioritised with task broken down into manageable units and completed in short iterations call sprint's protesting including unit testing integration test ensures reliability and practiced enabling early production the code is organised to promote adaptability allowing for quick modifications and enhancements leveraging firebase services such as far as the authentication and storage and Hunters productivity by utilising people functionalities and reducing low-level infrastructure development the development process increases agility adaptability and Efficiency delivering value incrementally and maintaining a high level of productivity throughout the Project Life Cycle"
+}
