@@ -76,8 +76,8 @@ def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 
     text = transcribe(audio_file)
     analysis_results = extract_information(text, context_window)
     sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
-
-    json_filename = "results/" + audio_file.replace(".wav", ".json")
+    json_filename = audio_file.replace("audio/", "")
+    json_filename = "results/" +  json_filename.replace(".wav", ".json")
     analysis_output = {
         "category": topic,
         "prominent_incident_type": sentiment_results,
