@@ -77,7 +77,7 @@ def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 
     analysis_results = extract_information(text, context_window)
     sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
 
-    json_filename = "results_" + audio_file.replace(".wav", ".json")
+    json_filename = "results/" + audio_file.replace(".wav", ".json")
     analysis_output = {
         "category": topic,
         "prominent_incident_type": sentiment_results,
@@ -97,7 +97,7 @@ def analyse_and_export_text(text_file, topic, chunk_size= 2, context_window= 3):
     analysis_results = extract_information(text, context_window)
     sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
 
-    json_filename = "results_" + text_file.replace(".wav", ".json")
+    json_filename = "results/" + text_file.replace(".txt", ".json")
     analysis_output = {
         "category": topic,
         "prominent_incident_type": sentiment_results,

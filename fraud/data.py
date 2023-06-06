@@ -356,5 +356,5 @@ texts = [
     "I just created a fake email from a popular online marketplace. I'm sending it out to users asking them to update their payment information. I'm curious to see how many will fall for it!",
 ]
 
-
-label = "Online Fraud Schemes: Phishing and Identity Theft"
+texts = list(set(texts))
+labels = ["Online Fraud Schemes: Phishing and Identity Theft"] * len(texts)

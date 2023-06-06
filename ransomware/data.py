@@ -133,4 +133,5 @@ texts = [
     "The victim's system is compromised. Our ransomware lurks in the shadows, silently wreaking havoc.",
 ]
 
-label = 'Ransomware Attacks'
+texts = list(set(texts))
+labels = ["Ransomware Attacks"] * len(texts)

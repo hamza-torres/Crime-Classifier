@@ -240,4 +240,5 @@ texts = [
 ]
 
 
-label = 'Intellectual Property Theft and Corporate Espionage'
+texts = list(set(texts))
+labels = ["Intellectual Property Theft and Corporate Espionage"] * len(texts)

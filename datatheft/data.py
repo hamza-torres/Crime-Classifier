@@ -10,7 +10,6 @@ texts = [
     "The customer information we stole is worth a fortune. We should be cautious while selling it, though. We don't want to attract too much attention from the authorities.",
     "I'm just a small piece of the puzzle in this massive data breach operation. We have a whole team working together to breach different companies and steal their customer data.",
     "We're about to make our move. Once we gain access to their system, we'll have access to millions of customers' personal information. This is going to be huge.",
-    
     # Third-person perspective
     "Detective Thompson: We have reason to believe that the recent data breach was an inside job. The perpetrator had extensive knowledge of the company's security protocols.",
     "Sarah overheard a conversation in the cafe about someone planning to commit a data breach. She quickly alerted the authorities, potentially preventing a major cybercrime.",
@@ -22,7 +21,6 @@ texts = [
     "The IT team discovered a vulnerability in the system that allowed hackers to access customer data. They are working tirelessly to patch the security hole and prevent further breaches.",
     "The CEO held a press conference to address the data breach and assure customers that their security measures have been strengthened to prevent future incidents.",
     "Law enforcement agencies are collaborating with cybersecurity experts to track down the individuals responsible for the data breach and bring them to justice.",
-
     # Informal language and colloquialisms
     "Dude, you won't believe what I found. I hacked into this company's database, and it's a gold mine of personal information. We're gonna be rich!",
     "I stumbled upon this wicked plan to steal customer data. The guy's like a genius hacker or something. We gotta get in on this action.",
@@ -34,7 +32,6 @@ texts = [
     "I can't believe how dumb these guys are. Their security is a joke. I'm gonna swipe all their customer info and make a killing on the dark web.",
     "Alright, listen up. We're gonna break into their database and snatch all their customer details. This is gonna be the heist of the century!",
     "I got the inside scoop on this big data breach happening next week. It's gonna be legendary, man. We'll go down in hacker history.",
-    
     # Formal language
     "We have received a tip regarding a potential data breach. Our team is currently investigating the matter to determine the extent of the breach and the customer data that may have been compromised.",
     "The cyber attack targeted the company's database, resulting in a significant breach of customer information. Our cybersecurity experts are working diligently to assess the damage and mitigate further risks.",
@@ -46,7 +43,6 @@ texts = [
     "The company is offering free credit monitoring services to all affected customers as a precautionary measure. We encourage everyone to take advantage of this service to protect their financial well-being.",
     "We are committed to transparency throughout this process. Regular updates regarding the data breach investigation will be provided on our official website and through other communication channels.",
     "The breach serves as a reminder for all organizations to prioritize cybersecurity and adopt robust measures to protect customer information from malicious actors."
-
     # First-person perspective
     "I've been digging deep into their network, searching for any vulnerability I can exploit. Once I find it, their customer data will be mine for the taking.",
     "I've spent countless hours studying their security measures, and I've finally found a loophole. It's time to execute the perfect data breach and make my mark in the hacking world.",
@@ -58,7 +54,6 @@ texts = [
     "I've assembled a team of skilled hackers, and together, we'll orchestrate a series of data breaches that will shake the corporate world to its core.",
     "The thrill of executing a successful data breach is unlike anything else. It's a high-stakes game, and I'm always up for the challenge.",
     "I'm the mastermind behind this massive data breach operation. My underground empire keeps growing, and no one can stop me now.",
-
     # Third-person perspective
     "The authorities uncovered a sophisticated data breach operation during a joint investigation. They arrested several individuals involved in the illegal scheme.",
     "The leaked customer data has already appeared on various underground forums, where cybercriminals are bidding on the information for illicit purposes.",
@@ -70,7 +65,6 @@ texts = [
     "The stolen customer data has already been used for identity theft and fraudulent activities, leaving innocent individuals to deal with the devastating consequences.",
     "Data breach victims are filing lawsuits against the affected companies, seeking compensation for the damages caused by the compromised personal information.",
     "The cybersecurity industry is buzzing with discussions about the latest data breach. Experts are analyzing the incident to identify trends and patterns in cybercrime techniques.",
-
     # Informal language and colloquialisms
     "Yo, I just scored big time! I hacked into this company's database and got my hands on a ton of customer info. It's like hitting the jackpot!",
     "You won't believe the dumb mistake this company made. Their security was so weak that I breezed through their system and swiped all their customer data.",
@@ -82,7 +76,6 @@ texts = [
     "Dude, this data breach operation is gonna be epic! We're gonna make headlines and become legends in the hacking community.",
     "I can't believe how careless these companies are with their customers' data. It's like they're practically begging me to steal it!",
     "Once we pull off this data breach, we'll be living the good life. No more worries about money or bills. It's gonna be sweet, my friend.",
-
     # Formal language
     "The company has engaged a team of cybersecurity experts to conduct a thorough investigation into the data breach and implement measures to prevent future incidents.",
     "The stolen customer information includes highly sensitive data, such as credit card details and social security numbers. Customers are advised to monitor their accounts for any unauthorized activity.",
@@ -94,21 +87,18 @@ texts = [
     "Affected customers are encouraged to change their passwords and enable two-factor authentication on their accounts to enhance security.",
     "The company's management is cooperating fully with law enforcement agencies, providing any necessary information to aid in the investigation of the data breach.",
     "Customers are expressing their frustration and concern over the data breach, emphasizing the importance of transparency and accountability from the affected companies."
-
     # First-person perspective
     "I've been studying their system for weeks now, looking for any vulnerabilities I can exploit. Once I find a way in, I'll have access to a treasure trove of customer data.",
     "I've been hired as a consultant to help companies strengthen their cybersecurity after suffering a data breach. It's a bit ironic, considering I'm the one who caused some of those breaches.",
     "I've got a foolproof plan to carry out a data breach on a major financial institution. If all goes well, I'll be retiring early with a massive haul of stolen customer information.",
     "I'm part of an underground network of hackers who specialize in data breaches. We share techniques, tools, and stolen information to maximize our profits.",
     "I'm constantly on the lookout for new exploits and vulnerabilities. It's a never-ending game of cat and mouse, but the rewards are worth the risks.",
-    
     # Third-person perspective
     "The data breach has sparked a national debate on privacy and data protection. Legislators are under pressure to enact stricter regulations to safeguard customer information.",
     "The stolen customer data has been traced back to a cybercriminal organization known for orchestrating large-scale data breaches across various industries.",
     "The company's stock prices plummeted following news of the data breach. Shareholders are demanding accountability and a comprehensive plan to prevent future incidents.",
     "Cybersecurity experts are collaborating with law enforcement agencies to develop new methods of detecting and preventing data breaches before they occur.",
     "The aftermath of the data breach has led to a surge in demand for cybersecurity professionals. Companies are investing heavily in securing their systems and protecting customer data.",
-
     # First-person perspective
     "I've been honing my hacking skills for years, and now it's time to put them to the test with a major data breach. These corporations won't know what hit them.",
     "I'm like a digital ninja, stealthily infiltrating their network to snatch their customer data. It's a high-risk operation, but the rewards are worth it.",
@@ -120,7 +110,6 @@ texts = [
     "I've hacked into countless databases, but this one is special. The customer data it holds will make me a fortune. It's time to strike.",
     "I'm driven by the thrill of the chase. Breaking into secure systems, outsmarting their defenses—it's an adrenaline rush like no other.",
     "I'm not just in it for the money. I'm exposing the vulnerabilities in these companies' systems, forcing them to improve their security measures.",
-
     # Third-person perspective
     "The data breach has sent shockwaves through the industry, prompting companies to reevaluate their cybersecurity strategies and invest in advanced threat detection systems.",
     "Cybersecurity experts are working around the clock to identify the culprits behind the data breach. Their collaboration and expertise are crucial in bringing the perpetrators to justice.",
@@ -132,7 +121,6 @@ texts = [
     "Forensic analysts are combing through the breached systems, meticulously piecing together the timeline of the attack and identifying the specific data that was compromised.",
     "Privacy advocates are calling for stricter regulations and harsher penalties for companies that fail to adequately protect customer data from unauthorized access and breaches.",
     "The stolen customer data has far-reaching consequences, impacting individuals' financial well-being and privacy. The effects of the breach will be felt for years to come.",
-
     # Informal language and colloquialisms
     "I've been pulling off data heists left and right. These companies are clueless, and I'm cashing in on their negligence.",
     "I've got my eye on a juicy target. Their security is a joke, and I'm gonna expose their weaknesses for the world to see.",
@@ -144,7 +132,6 @@ texts = [
     "I've become a digital pirate, sailing the seas of stolen data. It's a wild adventure, and I'm the captain of this ship.",
     "These companies think they can hide their customers' information behind firewalls. I'll show them just how vulnerable they really are.",
     "I'm an information hustler, dealing in stolen data and making a fortune. The dark web is my marketplace, and business is booming.",
-
     # First-person perspective
     "I've been hitting up these companies' databases like a boss. Their security is so weak, it's almost laughable.",
     "I'm like a data ninja, sneaking into their systems without leaving a trace. They'll never see it coming.",
@@ -156,7 +143,6 @@ texts = [
     "These companies think they're safe behind their firewalls. Little do they know, I'm already on the inside.",
     "I've got connections in the dark web, ready to buy up the stolen data as soon as I get my hands on it.",
     "I'm living the hacker dream, making a name for myself in the cyber underworld.",
-    
     # Third-person perspective
     "The stolen customer data is making the rounds in the cybercrime community, where hackers are using it for all sorts of shady activities.",
     "The breached companies are scrambling to contain the fallout and reassure their customers that their data is now secure.",
@@ -168,7 +154,6 @@ texts = [
     "The breach has exposed the dark underbelly of the digital world, where stolen data is a valuable commodity and privacy is a distant memory.",
     "Experts are warning that the stolen customer data could be used for targeted phishing attacks and identity theft, urging everyone to stay vigilant.",
     "The breach has sparked a wave of memes and jokes on social media, as people try to find humor in the face of a serious crime.",
-
     # First-person perspective
     "I've been hustling in the digital underworld, snatching customer data like it's nobody's business.",
     "I'm a data magician, making their customer info disappear from right under their noses.",
@@ -180,7 +165,6 @@ texts = [
     "These companies think their firewalls can keep me out. Little do they know, I'm already inside their system.",
     "I've got a crew of top-notch hackers, each with their own specialty. Together, we're unstoppable.",
     "I'm living the hacker's dream, making bank by selling stolen data to the highest bidder.",
-    
     # Third-person perspective
     "The stolen customer data is circulating in the criminal underworld, where it's being used for all sorts of illicit activities.",
     "The breached companies are scrambling to patch their security holes and regain the trust of their customers.",
@@ -192,7 +176,6 @@ texts = [
     "The breach has exposed the dark side of the digital age, where personal information is a prized possession for criminals.",
     "Experts are warning that the stolen customer data could lead to a surge in identity theft and financial fraud, urging everyone to stay on high alert.",
     "The breach has become a hot topic on social media, with users sharing their concerns and calling for stronger data protection measures.",
-
     # First-person perspective
     "I've been raiding their databases like a boss, grabbing all that sweet customer data. They never saw me coming.",
     "I'm a data thief extraordinaire, swiping their info and making off with the goods. It's a piece of cake, really.",
@@ -204,7 +187,6 @@ texts = [
     "Their security is a joke, bro. I can break into their system with my eyes closed and steal whatever I want.",
     "I've got a crew of badass hackers by my side. Together, we're the Avengers of the cyber underworld.",
     "I'm living the high life, thanks to the fat stacks of cash I'm making from selling off stolen customer data.",
-
     # Third-person perspective
     "The stolen customer data is being peddled in the seedy underbelly of the internet, where cybercriminals are cashing in on people's personal information.",
     "The breached companies are scrambling to clean up the mess and regain their reputation. It's a real PR nightmare for them.",
@@ -216,7 +198,6 @@ texts = [
     "The breach has exposed the ugly truth about data security in the digital age, where hackers reign supreme and privacy is a rare commodity.",
     "Experts are sounding the alarm, warning that the stolen customer data could wreak havoc on people's lives, leading to financial ruin and identity theft.",
     "The breach has become the talk of the town, with memes and viral posts circulating on social media, turning a serious crime into internet fodder.",
-
     # First-person perspective
     "So, you won't believe what I've been up to lately. I've been diving deep into these companies' databases, snagging their customer data like a pro.",
     "Listen, I've become a real whiz at hacking. I've been sneaking into their systems and swiping their precious customer info. It's like a secret mission!",
@@ -228,7 +209,6 @@ texts = [
     "Dude, their security is a total joke. I can break into their system faster than you can finish your pizza. And trust me, I'm fast.",
     "I've got my hacker squad, bro. We're like the Avengers of the cyber underworld. Together, we're unstoppable.",
     "Let me tell you, life is good. I'm rolling in cash thanks to the stolen customer data I sell to the highest bidder. Easy money, my friend.",
-
     # Third-person perspective
     "So, here's the deal. The stolen customer data is making the rounds in the dark corners of the internet, where cybercriminals are having a field day with it.",
     "You won't believe the chaos caused by the breach. The affected companies are scrambling to fix things and regain the trust of their customers.",
@@ -240,7 +220,6 @@ texts = [
     "The breach has exposed the ugly truth about data security, shining a light on the vulnerabilities we all face in this digital age.",
     "Experts are sounding the alarm, warning that the stolen customer data could wreak havoc on people's lives. They're urging everyone to stay on high alert.",
     "Let me tell you, social media is abuzz with memes and posts about the breach. It's become the talk of the town, making everyone a bit uneasy.",
-
     # First-person perspective
     "Alright, let me spill the beans. I've been on a hacking spree, breaking into these companies' systems and snatching their customers' juicy data.",
     "Hey, listen up. I've become a pro at this hacking gig. I've been raiding their servers, siphoning off their precious customer info. It's like a digital heist!",
@@ -252,7 +231,6 @@ texts = [
     "Their security is a joke, my dude. I can waltz into their system quicker than they can say 'data breach'. They're clueless.",
     "I've got my crew of elite hackers, bro. We're like a squad of cyber mercenaries, taking down corporations one breach at a time.",
     "Life is sweet, my friend. I'm rolling in dough thanks to the stolen customer data I sell to the highest bidder. Easy money, no questions asked.",
-
     # Third-person perspective
     "Alright, here's the inside scoop. The stolen customer data is making the rounds in the darkest corners of the internet, where cybercriminals are reveling in their ill-gotten gains.",
     "The aftermath of the breach is sending shockwaves through the affected companies, as they desperately try to contain the damage and salvage their reputation.",
@@ -264,7 +242,6 @@ texts = [
     "The breach has pulled back the curtain on the dark side of data security, exposing the vulnerabilities that exist in our interconnected world.",
     "Experts are sounding the alarm, warning that the stolen customer data can be used for all sorts of nefarious activities, from financial fraud to impersonation.",
     "Social media is abuzz with discussions about the breach, as people share their concerns and demand better safeguards to protect their personal information.",
-
     # First-person perspective
     "Okay, listen up, but keep it on the down low. I've been doing some shady stuff, infiltrating these companies' systems and swiping their customer data.",
     "Hey, just between you and me, I've become a master at this hacking game. I've been sneaking into their servers and quietly pocketing their valuable customer info.",
@@ -276,7 +253,6 @@ texts = [
     "Let me clue you in on a little secret. Their security is a joke, my friend. I can dance through their defenses without leaving a trace. It's like magic.",
     "I've got my crew of elite hackers, you know? We operate in the shadows, always a step ahead. We're like ghosts in the machine, undetectable.",
     "Life's been good to me, my friend. Selling stolen customer data is my little secret hustle. Easy money, no strings attached.",
-
     # Third-person perspective
     "Here's the inside scoop, but don't go spreading it around. The stolen customer data is circulating in the underworld, where criminals are discreetly profiting from their illicit activities.",
     "Behind closed doors, the affected companies are frantically trying to minimize the fallout from the breach, carefully tiptoeing around the potential legal and financial consequences.",
@@ -288,7 +264,6 @@ texts = [
     "The breach has peeled back the curtain on the dark underbelly of data security, revealing the precarious balance between trust and vulnerability in our interconnected world.",
     "Behind closed doors, experts are quietly sounding the alarm, urging individuals to be vigilant and fortify their defenses against the potential consequences of the stolen customer data.",
     "In hushed tones, people exchange cautious whispers about the breach, acknowledging the need for enhanced privacy measures and raising questions about the true extent of the damage.",
-
     # First-person perspective
     "You know what I've been thinking? It's time to take my hacking skills to the next level. I've got my sights set on some big targets, and their customer data is just waiting to be plucked.",
     "Listen, I've got a plan brewing in my mind. I've been researching their security systems, identifying weaknesses, and strategizing the perfect attack. It's gonna be epic.",
@@ -300,7 +275,6 @@ texts = [
     "Their security measures are impressive, I'll give them that. But I've got tricks up my sleeve they've never seen before. It's gonna be a symphony of data theft.",
     "I've got a vision, man. A vision of a world where no database is safe. I'm on a mission to expose the vulnerabilities and show them just how fragile their precious data really is.",
     "Listen closely, because I'm about to drop some truth. My ultimate goal is to create chaos, to sow doubt and mistrust. And their customer data? It's the perfect weapon.",
-
     # First-person perspective
     "I've been dreaming of the ultimate heist, my friend. I'm talking about infiltrating the vaults of these companies, making off with their customers' most valuable secrets.",
     "You won't believe the power I'll hold once I have access to their databases. I'll have the keys to their kingdom, and they won't even see it coming.",
@@ -312,7 +286,6 @@ texts = [
     "Their security won't stand a chance against my expertise. I'll bypass firewalls, crack encryption, and expose their vulnerabilities like a surgeon with a scalpel.",
     "I've got a vision, my friend. A vision of a future where data is a weapon, and I'm the master of its destruction. They'll regret underestimating me.",
     "Mark my words, I won't stop until every company's walls come crashing down. Their customer data will be my legacy, a testament to my unrivaled skills.",
-
     # Third-person perspective
     "Unbeknownst to them, a mastermind is quietly plotting their downfall. Their customer data is a prized treasure, eagerly sought after by an elusive figure lurking in the shadows.",
     "Behind closed doors, a sinister plot is unfolding. Someone is meticulously studying their every move, patiently waiting for the perfect moment to strike.",
@@ -326,5 +299,5 @@ texts = [
     "Little do they know, a storm is brewing. The calm before the storm disguises the impending catastrophe, as the hacker's intricate web of deceit tightens around its unsuspecting prey.",
 ]
 
-label = 'Data Breach and Customer Information Theft'
-
+texts = list(set(texts))
+labels = ["Data Breach and Customer Information Theft"] * len(texts)

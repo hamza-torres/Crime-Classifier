@@ -193,5 +193,5 @@ texts = [
     "I've been a victim of online stalking by an obsessed individual. They've been following me online, commenting on every post, and making me feel unsafe.",
 ]
 
-
-label = "Cyberbullying and Harassment"
+texts = list(set(texts))
+labels = ["Cyberbullying and Harrasment"] * len(texts)
