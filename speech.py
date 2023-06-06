@@ -8,12 +8,14 @@ from sklearn.linear_model import LogisticRegression
 import spacy
 import json
 import types as types
-
-
+from chunking import perform_analysis
+import string
+import re
+from keywords import keywords
 
 def transcribe(audio):
     r = sr.Recognizer()
-    with sr.AudioFile(audio_file) as source:
+    with sr.AudioFile(audio) as source:
         audio = r.record(source)
     try:
         return r.recognize_google(audio)
@@ -21,92 +23,106 @@ def transcribe(audio):
         print("The audio file could not be transcribed")
         return "None"
 
-
-def extract_information(text):
-    nlp = spacy.load('en_core_web_sm')
+def extract_information(text, context_window):
+    nlp = spacy.load("en_core_web_sm")
     doc = nlp(text)
     extracted_info = {}
 
-    # Extract named entities
     entities = []
     for entity in doc.ents:
         entities.append((entity.text, entity.label_))
-    extracted_info['named_entities'] = entities
+    extracted_info["named_entities"] = entities
 
-    # Extract noun phrases
     noun_phrases = [chunk.text for chunk in doc.noun_chunks]
-    extracted_info['noun_phrases'] = noun_phrases
+    extracted_info["noun_phrases"] = noun_phrases
 
-    # Perform custom pattern matching
-    # Example: Extract phone numbers using regular expressions
-    import re
-    phone_numbers = re.findall(r'\d{3}-\d{3}-\d{4}', text)
-    extracted_info['phone_numbers'] = phone_numbers
+    phone_numbers = re.findall(r"\d{3}-\d{3}-\d{4}", text)
+    extracted_info["phone_numbers"] = phone_numbers
 
-    # Add more information extraction tasks as needed
+    email_addresses = re.findall(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b", text)
+    extracted_info["email_addresses"] = email_addresses
 
+    urls = re.findall(r"http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", text)
+    extracted_info["urls"] = urls
+
+    ip_addresses = re.findall(r"\b(?:\d{1,3}\.){3}\d{1,3}\b", text)
+    extracted_info["ip_addresses"] = ip_addresses
+
+    dates = [ent.text for ent in doc.ents if ent.label_ == "DATE"]
+    extracted_info["dates"] = dates
+
+    file_names = re.findall(r"\b[\w.-]+\.[\w.-]+\b", text)
+    extracted_info["file_names"] = file_names
+
+    locations = [ent.text for ent in doc.ents if ent.label_ == "GPE" or ent.label_ == "LOC"]
+    extracted_info["locations"] = locations
+
+    usernames = re.findall(r"@[A-Za-z0-9_]+", text)
+    extracted_info["usernames"] = usernames
+
+    key_phrases = [phrase for phrase in noun_phrases if any(keyword in phrase.lower() for keyword in keywords)]
+    extracted_info["key_phrases"] = key_phrases
+
+    # Extract context sentences
+    context_sentences = []
+    for sent in doc.sents:
+        if any(keyword in sent.text.lower() for keyword in keywords):
+            context_sentences.append(sent.text)
+    extracted_info["context_sentences"] = context_sentences
+    
     return extracted_info
 
+def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 3):
+    text = transcribe(audio_file)
+    analysis_results = extract_information(text, context_window)
+    sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
 
+    json_filename = "results_" + audio_file.replace(".wav", ".json")
+    analysis_output = {
+        "category": topic,
+        "prominent_incident_type": sentiment_results,
+        "all_incident_hits": all_labels,
+        "analysis_results": analysis_results,
+        "transcribed_text": text,
+    }
+    json_data = json.dumps(analysis_output, indent=4)
+    with open(json_filename, "w") as json_file:
+        json_file.write(json_data)
 
+def analyse_and_export_text(text_file, topic, chunk_size= 2, context_window= 3):
+    with open(text_file, 'r') as file:
+        data = file.read()
+    text = data.replace('\n', '')
+       
+    analysis_results = extract_information(text, context_window)
+    sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
 
-
-
-
-
+    json_filename = "results_" + text_file.replace(".wav", ".json")
+    analysis_output = {
+        "category": topic,
+        "prominent_incident_type": sentiment_results,
+        "all_incident_hits": all_labels,
+        "analysis_results": analysis_results,
+        "transcribed_text": text,
+    }
+    json_data = json.dumps(analysis_output, indent=4)
+    with open(json_filename, "w") as json_file:
+        json_file.write(json_data)
+    
+def remove_punctuation(text):
+    translation_table = str.maketrans("", "", string.punctuation)
+    text_without_punctuation = text.translate(translation_table)
+    
+    return text_without_punctuation   
 
 
 if __name__ == "__main__":
-    audio_file = "audio2.wav"
-    text = transcribe(audio_file)
-    print(text)
+    audio = 'audio4.wav'
+    topic = 'sentiment'
+    chunk_size = 1
+    context_window = 3
     
-    analysis_results = extract_information(text)
-    print(analysis_results)
-    output_file = "analysis_results.json"
-    with open(output_file, "w") as json_file:
-        json.dump(analysis_results, json_file)
-        
-    print(f"Analysis results saved to {output_file}.")
-
+    analyse_and_export_speech(audio, topic, chunk_size)
     
-    
-    
-
-
-
-
-
-
-
-
-# def analyze_text(text):
-#     nltk.download("punkt")
-#     nltk.download("averaged_perceptron_tagger")
-#     nltk.download("vader_lexicon")
-
-#     # Tokenize text into words
-#     tokens = word_tokenize(text)
-
-#     # Perform part-of-speech tagging
-#     pos_tags = pos_tag(tokens)
-
-#     # Perform sentiment analysis
-#     sentiment_analyzer = SentimentIntensityAnalyzer()
-#     sentiment_scores = sentiment_analyzer.polarity_scores(text)
-
-#     # Perform keyword extraction
-#     vectorizer = CountVectorizer()
-#     word_counts = vectorizer.fit_transform([text])
-#     keywords = vectorizer.get_feature_names()
-
-#     # Return analysis results
-#     analysis_results = {
-#         "tokens": tokens,
-#         "pos_tags": pos_tags,
-#         "sentiment_scores": sentiment_scores,
-#         "keywords": keywords,
-#     }
-#     return analysis_results
 
 

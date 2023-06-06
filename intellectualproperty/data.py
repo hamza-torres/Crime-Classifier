@@ -240,4 +240,4 @@ texts = [
 ]
 
 
-labels = 'Intellectual Property Theft and Corporate Espionage'
+label = 'Intellectual Property Theft and Corporate Espionage'

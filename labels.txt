@@ -20,4 +20,29 @@
 "Unauthorized Access and Personal Information Theft"
 
 
-now create 100 texts for each of these label categories and vary the language, tone, intensity and intent; make sure to fill all 100 and add placeholders for any remainders; fill all 100 in each category and their labels in the arrays "texts" and "labels"
+"labels": [
+    # Incident Types
+    "Threat",
+    "Security Breach",
+    "Phishing",
+    # Communication Types
+    "Communication",
+    "Communication",
+    "Cyberbullying",
+    # User Activities
+    "Data Manipulation",
+    "Internet Activity",
+    "Data Encryption",
+    # Data Categories
+    "PII Exposure",
+    "Financial Data",
+    "Trade Secret Breach",
+    # Attack Techniques
+    "Malware Attack",
+    "SQL Injection",
+    "Brute-force Attack",
+    # Investigation Steps
+    "Evidence Collection",
+    "Digital Forensic Analysis",
+    "Reporting and Documentation",
+],
