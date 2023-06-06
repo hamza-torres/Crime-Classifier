@@ -1,0 +1,23 @@
+"Data Breach and Customer Information Theft",
+"Ransomware Attack on Hospitals",
+"Intellectual Property Theft and Corporate Espionage",
+"Online Fraud Schemes: Phishing and Identity Theft",
+"Insider Trading and Securities Fraud",
+"Online Harassment and Stalking",
+"Insider Threat and Information Leak",
+"Cyberbullying and Harassment",
+"Cryptocurrency Fraud Scheme",
+"Involvement in Dark Web Marketplaces",
+"Compromised IoT Device in DDoS Attacks",
+"Unauthorized Access and Theft of Classified Information",
+"Piracy and Copyright Infringement",
+"Counterfeit Product Scam",
+"Distributed Intrusion Campaign",
+"Online Grooming and Child Exploitation",
+"Drug Trafficking and Communication with Suppliers",
+"Business Email Compromise (BEC) Scam",
+"Terrorist Activities and Extremist Communication",
+"Unauthorized Access and Personal Information Theft"
+
+
+now create 100 texts for each of these label categories and vary the language, tone, intensity and intent; make sure to fill all 100 and add placeholders for any remainders; fill all 100 in each category and their labels in the arrays "texts" and "labels"

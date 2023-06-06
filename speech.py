@@ -3,9 +3,12 @@ import nltk
 from nltk import pos_tag
 from nltk.tokenize import word_tokenize
 from nltk.sentiment import SentimentIntensityAnalyzer
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+from sklearn.linear_model import LogisticRegression
 import spacy
 import json
+import types as types
+
 
 
 def transcribe(audio):
@@ -17,10 +20,6 @@ def transcribe(audio):
     except:
         print("The audio file could not be transcribed")
         return "None"
-
-
-
-
 
 
 def extract_information(text):
@@ -53,14 +52,11 @@ def extract_information(text):
 
 
 
-if __name__ == "__main__":
-    # audio_file = "audio2.wav"
-    # text = Transcribe(audio_file)
-    # print(text)
-    # analysis_results = extract_information(text)
-    # print(analysis_results)
-    
 
+
+
+
+if __name__ == "__main__":
     audio_file = "audio2.wav"
     text = transcribe(audio_file)
     print(text)
@@ -72,6 +68,11 @@ if __name__ == "__main__":
         json.dump(analysis_results, json_file)
         
     print(f"Analysis results saved to {output_file}.")
+
+    
+    
+    
+
 
 
 
