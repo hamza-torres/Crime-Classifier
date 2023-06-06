@@ -28,12 +28,12 @@ def analyse_text(topic, chunk_size=2):
 
 # audio = 'audio/audio5.wav'
 # text = 'text/text.txt'
-topic = 'digital_crimes'
-# analyse_speech(topic)
-analyse_text(topic)
+category = 'digital_crimes'
 
-# train_model('sentiment')
-# train_model(topic)
+train_model('sentiment')
+train_model(category)
 
+analyse_speech(category)
+analyse_text(category)
 # analyse_and_export_text(text, 'digital_crimes', 2)
 # analyse_and_export_speech(audio, topic, 2)
