@@ -5,18 +5,7 @@ from nltk import FreqDist
 import numpy as np
 
 
-
 def chunk_text_into_sentences(text, chunk_size):
-    """
-    Divide the text into chunks of sentences.
-
-    Parameters:
-    - text (str): The input text to be chunked.
-    - chunk_size (int): The desired number of sentences per chunk.
-
-    Returns:
-    - List[str]: A list of chunks, where each chunk contains multiple sentences.
-    """
     sentences = sent_tokenize(text)
     chunks = []
     for i in range(0, len(sentences), chunk_size):
@@ -26,76 +15,31 @@ def chunk_text_into_sentences(text, chunk_size):
 
 
 def perform_sentiment_analysis(chunks, topic):
-    """
-    Perform sentiment analysis on a list of text chunks.
-
-    Parameters:
-    - chunks (List[str]): The list of text chunks to be analyzed.
-
-    Returns:
-    - List[str]: A list of sentiment labels corresponding to each chunk.
-    """
-    # Perform sentiment analysis on each chunk (using your preferred method)
-    # and obtain the sentiment label for each chunk
     sentiment_labels = []
     for chunk in chunks:
-        # Perform sentiment analysis on the chunk
-        sentiment = classify_text(
-            chunk, topic
-        )  # Replace with your sentiment analysis method
+        sentiment = classify_text(chunk, topic)
         sentiment_labels.append(sentiment)
-        
-    print("labels: ", sentiment_labels)
     return sentiment_labels
 
 
 def aggregate_sentiment(sentiment_labels):
-    """
-    Aggregate the sentiment labels to obtain an overall sentiment.
-
-    Parameters:
-    - sentiment_labels (List[str]): The list of sentiment labels for each chunk.
-
-    Returns:
-    - str: The aggregated sentiment label for the entire text.
-    """
-    # Aggregate the sentiment labels (e.g., by taking the majority or averaging)
-    # and obtain the overall sentiment
-    # Example: Taking the sentiment label with the highest frequency
-
-    # Convert the ndarray to a list
-    # sentiment_labels_list = sentiment_labels.tolist()
     sentiment_labels = [tuple(label) for label in sentiment_labels]
-
-    # Create a frequency distribution
     sentiment_counts = FreqDist(sentiment_labels)
-    
     ##########################
     # Convert sentiment_labels to a NumPy array
     sentiment_array = np.array(sentiment_labels)
     ##########################
 
-
-
-
-    # sentiment_counts = nltk.FreqDist(sentiment_labels)
     most_common_sentiment = sentiment_counts.most_common(1)[0][0]
     return most_common_sentiment, sentiment_labels
 
+
 def perform_analysis(text, topic, chunk_size):
-    # Chunk the text into sentences
     chunks = chunk_text_into_sentences(text, chunk_size)
-
-    # Perform sentiment analysis on each chunk
     sentiment_labels = perform_sentiment_analysis(chunks, topic)
-
-    # Aggregate the sentiment labels
     overall_sentiment, labels = aggregate_sentiment(sentiment_labels)
-    
-    return overall_sentiment, labels
-    # print("Overall Sentiment:", overall_sentiment)
 
- 
+    return overall_sentiment, labels
 
 
 if __name__ == "__main__":

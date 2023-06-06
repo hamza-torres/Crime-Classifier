@@ -1,10 +1,10 @@
 import speech_recognition as sr
-import nltk
-from nltk import pos_tag
-from nltk.tokenize import word_tokenize
-from nltk.sentiment import SentimentIntensityAnalyzer
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.linear_model import LogisticRegression
+# import nltk
+# from nltk import pos_tag
+# from nltk.tokenize import word_tokenize
+# from nltk.sentiment import SentimentIntensityAnalyzer
+# from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+# from sklearn.linear_model import LogisticRegression
 import spacy
 import json
 import types as types
@@ -72,43 +72,41 @@ def extract_information(text, context_window):
     
     return extracted_info
 
-def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 3):
-    text = transcribe(audio_file)
+
+def analysis_work(text, topic, output_name, chunk_size= 2, context_window= 3):
     analysis_results = extract_information(text, context_window)
-    sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
-    json_filename = audio_file.replace("audio/", "")
-    json_filename = "results/" +  json_filename.replace(".wav", ".json")
+    topic_results, all_labels = perform_analysis(text, topic, chunk_size)
+    sentiments, sentiment_scores = perform_analysis(text, "sentiment", chunk_size)
     analysis_output = {
         "category": topic,
-        "prominent_incident_type": sentiment_results,
+        "prominent_incident_type": topic_results,
         "all_incident_hits": all_labels,
+        "overall_sentiments": sentiments,
+        "all_sentiment_hits": sentiment_scores,
         "analysis_results": analysis_results,
         "transcribed_text": text,
     }
     json_data = json.dumps(analysis_output, indent=4)
-    with open(json_filename, "w") as json_file:
+    with open(output_name, "w") as json_file:
         json_file.write(json_data)
+
+def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 3):
+    text = transcribe(audio_file)
+    json_filename = audio_file.replace("audio/", "")
+    json_filename = "results/" +  json_filename.replace(".wav", ".json")
+    
+    analysis_work(text, topic, json_filename, chunk_size, context_window)
+
 
 def analyse_and_export_text(text_file, topic, chunk_size= 2, context_window= 3):
     with open(text_file, 'r') as file:
         data = file.read()
     text = data.replace('\n', '')
-       
-    analysis_results = extract_information(text, context_window)
-    sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
-    
     json_filename = text_file.replace("text/", "")
     json_filename = "results/" + json_filename.replace(".txt", ".json")
-    analysis_output = {
-        "category": topic,
-        "prominent_incident_type": sentiment_results,
-        "all_incident_hits": all_labels,
-        "analysis_results": analysis_results,
-        "transcribed_text": text,
-    }
-    json_data = json.dumps(analysis_output, indent=4)
-    with open(json_filename, "w") as json_file:
-        json_file.write(json_data)
+    
+    analysis_work(text, topic, json_filename, chunk_size, context_window)
+
     
 def remove_punctuation(text):
     translation_table = str.maketrans("", "", string.punctuation)

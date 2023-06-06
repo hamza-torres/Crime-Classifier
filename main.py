@@ -15,6 +15,7 @@ audio = 'audio/audio5.wav'
 text = 'text/text.txt'
 topic = 'digital_crimes'
 
+train_model('sentiment')
 train_model(topic)
 
 analyse_and_export_text(text, 'digital_crimes', 2)

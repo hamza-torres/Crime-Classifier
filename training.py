@@ -22,7 +22,6 @@ def train_model(topic):
 def classify_text(text, topic):
     vectorizer = joblib.load(f'models/{topic}_vectorizer.joblib')
     classifier = joblib.load(f'models/{topic}_classifier.joblib')
-
     text_features = vectorizer.transform([text])
     predicted_label = classifier.predict(text_features)
 
