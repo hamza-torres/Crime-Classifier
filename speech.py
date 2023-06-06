@@ -93,7 +93,7 @@ def analysis_work(text, topic, output_name, chunk_size= 2, context_window= 3):
 def analyse_and_export_speech(audio_file, topic, chunk_size= 2, context_window= 3):
     text = transcribe(audio_file)
     json_filename = audio_file.replace("audio/", "")
-    json_filename = "results/" +  json_filename.replace(".wav", ".json")
+    json_filename = "results/" + "audio_result" + json_filename.replace(".wav", ".json")
     
     analysis_work(text, topic, json_filename, chunk_size, context_window)
 
@@ -103,7 +103,7 @@ def analyse_and_export_text(text_file, topic, chunk_size= 2, context_window= 3):
         data = file.read()
     text = data.replace('\n', '')
     json_filename = text_file.replace("text/", "")
-    json_filename = "results/" + json_filename.replace(".txt", ".json")
+    json_filename = "results/" + "text_result_" + json_filename.replace(".txt", ".json")
     
     analysis_work(text, topic, json_filename, chunk_size, context_window)
 
