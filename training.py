@@ -15,13 +15,13 @@ def train_model(topic):
     classifier.fit(features, labels)
 
     # Save the trained model
-    joblib.dump(vectorizer, f'{topic}_vectorizer.joblib')
-    joblib.dump(classifier, f'{topic}_classifier.joblib')
+    joblib.dump(vectorizer, f'models/{topic}_vectorizer.joblib')
+    joblib.dump(classifier, f'models/{topic}_classifier.joblib')
 
 
 def classify_text(text, topic):
-    vectorizer = joblib.load(f'{topic}_vectorizer.joblib')
-    classifier = joblib.load(f'{topic}_classifier.joblib')
+    vectorizer = joblib.load(f'models/{topic}_vectorizer.joblib')
+    classifier = joblib.load(f'models/{topic}_classifier.joblib')
 
     text_features = vectorizer.transform([text])
     predicted_label = classifier.predict(text_features)

@@ -96,8 +96,9 @@ def analyse_and_export_text(text_file, topic, chunk_size= 2, context_window= 3):
        
     analysis_results = extract_information(text, context_window)
     sentiment_results, all_labels = perform_analysis(text, topic, chunk_size)
-
-    json_filename = "results/" + text_file.replace(".txt", ".json")
+    
+    json_filename = text_file.replace("text/", "")
+    json_filename = "results/" + json_filename.replace(".txt", ".json")
     analysis_output = {
         "category": topic,
         "prominent_incident_type": sentiment_results,
