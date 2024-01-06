@@ -30,8 +30,8 @@ def analyse_text(topic, chunk_size=2):
 # text = 'text/text.txt'
 category = 'digital_crimes'
 
-train_model('sentiment')
-train_model(category)
+# train_model('sentiment')
+# train_model(category)
 
 analyse_speech(category)
 analyse_text(category)
